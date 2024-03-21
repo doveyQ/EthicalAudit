@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Phishing Dashboard</h1>
+
+        <h2>Timestamps (Link Opened):</h2>
+        <ul class="timestamp-list">
+            {% for timestamp in timestamps_get %}
+                <li>{{ timestamp }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Count (Link Opened):</h2>
+        <p>{{ count_get }}</p>
+
+        <h2>Timestamps (Submitted Data):</h2>
+        <ul class="timestamp-list">
+            {% for timestamp in timestamps_post %}
+                <li>{{ timestamp }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Count (Submitted Data):</h2>
+        <p>{{ count_post }}</p>
+
+        <div class="chart-container">
+            <img src="data:image/png;base64,{{ diagram }}" alt="Timestamp Counts" class="img-fluid">
+        </div>
+    </div>
+
+</body>
+</html>

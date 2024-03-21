@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICROSOFT LOGIN</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    
+    html{
+        height: 100%;
+    }
+
+    body {
+        margin: auto;
+        padding: auto;
+        height:100% ;
+        width:100%;
+        background: url('px-Microsoft_login_screen3.svg.png');
+        background-size: cover; 
+        /* background-repeat: no-repeat; */
+
+    }
+
+    /* upper box */
+    .container {
+        position: relative;
+        background-color: white;
+        width: 24.5vw;
+        height: 42vh;
+        padding: 2.5rem;
+        margin-right: none;
+        top: 5rem;
+        left: 35%;
+        font-family: 'Roboto', sans-serif;
+        color: #615d5d;
+        font-size: 0.7em;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    /* sign in heading */
+    .container h2 {
+        margin: 0rem 0rem;
+        font-size: 1.3rem;
+        color: black;
+        font-weight: 600;
+        margin-bottom: 0rem;
+    }
+
+    /* microsoft logo  */
+    .container img {
+        width: 25px;
+    }
+
+    /* ? logo  */
+    #seckey img {
+        width: 1rem;
+        padding-left: 0.5rem;
+    }
+  
+    /* microsoft logo and heading  */
+    #top_line {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+
+    #top_line li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0rem 0rem;
+        font-size: 1.9em;
+    }
+    
+    /* input form  */
+    .container input {
+        border: none;
+        border-bottom: 1px solid rgb(87, 87, 87);
+        border-color: #615d5d;
+        width: 23.8vw;
+        height: 7vh;
+        margin-bottom: 0.8rem;
+        margin-top: 0.5rem;
+        font-size: 1.5em;
+    }
+    .container input:focus {
+        outline: none;
+        border-bottom: 1px solid rgb(87, 87, 87);
+    }
+
+    /* no account and sign in options */
+    #noacc,
+    #seckey {
+        /* position: absolute; */
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+        padding-left: 0;
+        margin-bottom: 0.1rem;
+    }
+
+
+    #noacc li,
+    #seckey li {
+        display: inline-block;
+        list-style-type: none;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+
+    #noacc a:hover,
+    #seckey a:hover {
+        color: rgb(79, 0, 124);
+        text-decoration: underline;
+    }
+
+    /* next button  */
+    .container button {
+        position: absolute;
+        width: 7.5vw;
+        height: 5.5vh;
+        left: 16em;
+        top: 15.3em;
+        background-color: #0067b8;
+        color: white;
+        border: none;
+        font-size: 1.5em;
+    }
+
+    .container button:hover {
+        cursor: pointer;
+        background-color: #015697;
+    }
+
+    /* lower box signin options */
+    .sigin {
+        position: absolute;
+        background-color: white;
+        border: none;
+        top: 28rem;
+        left: 35%;
+        width: 540px;
+        height: 8vh;
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        color: #615d5d;
+        font-size: 1.2em;
+        font-weight: 500;
+        text-indent: 1.3em;
+    }
+
+    /* key logo */
+    .sigin img {
+        width: 1.5vw;
+        margin-right: 0.8em;
+    }
+
+    .sigin:hover {
+        background-color: #d4d3d3;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <!-- main upper box -->
+    <div class="container">
+        
+        <!-- microsoft logo and heading -->
+        <ul id="top_line">
+            <li><img src="images.png" alt="microsoft logo"></li>
+            <li>Microsoft</li>
+        </ul>
+        
+        <h2>Sign in</h2>
+
+        <!-- input text  -->
+        <input type="text" placeholder="Email, phone, or Skype">
+        
+        <!-- create account -->
+        <ul id="noacc">
+            <li>No account? </li>
+            <li><a href="https://signup.live.com/signup?client_id=81feaced-5ddd-41e7-8bef-3e20a2689bb7&response_type=code&prompt=login&x-client-SKU=MSAL.Desktop&x-client-Ver=4.45.0.0&msproxy=1&issuer=mso&tenant=common&ui_locales=en-US&client_info=1&signup=1&lw=1&fl=easi2&epct=AQABAAAAAAD--DLA3VO7QrddgJg7Wevro-TsFe87LmpgX_CpRffQ-K_zzbLpriSiPaxJGW4dnefFSUAsdVxhHoI5pVrp_M83Kjvk8RL3cd7jHpUeJxyBhsWloy62CDWKw5VtdecdesaFBb-WLFRHWsxROpo5uwSZy9ThPI6hNnVCcPp3UcsKnIUpGNHcYqLld-omz6SLRZ_Rh51yAxnB4ZMzjjFr4yl06VwrdQquOWV13_xbrW8s3iAA&jshs=0&contextid=E0C90E88DCDA0348&opid=1E776B2D51E607A4&bk=1673268958&ru=https://login.live.com/oauth20_authorize.srf%3fclient_id%3d81feaced-5ddd-41e7-8bef-3e20a2689bb7%26scope%3dservice%253a%253aaccount.microsoft.com%253a%253aMBI_SSL%2bopenid%2bprofile%2boffline_access%26redirect_uri%3dhttps%253a%252f%252faccount.microsoft.com%252fauth%252fcomplete-signin-oauth%26response_type%3dcode%26state%3dH4sIAAAAAAAEAAXBy6JCQAAA0H9pa-EVw7K8Rt7iSjsMwmQSI3z9PefEE3MN-eQYlwt-QGRkO3WOHFB0sAvgvl7TlnaQ9ZoBZyKvwLtVBuejuL6qofQNpkN7qmAbNIss6fC83-YgbdtDpcCwNwsVG5rettmykGtMD14oAESA93AP_-TVl4QEz59ojbTKyCp9snFNXMjnaUxzqx-4pUCyjB9ZPb6Y4S1S8ecoftee62YqkLLv6WM4xMvRyVGyMgV-leUXegTA_uz22sbQNAg54LPOy6KSzfyutVruRdfE-fzjqAfa1uHjku2imrSlxOnqLVLXPtFXPBpEWENRjLHbBbqwV7qCR8sNuDNGQDEbs9vyBHf9x8Lz6R979-MTQgEAAA%26prompt%3dlogin%26x-client-SKU%3dMSAL.Desktop%26x-client-Ver%3d4.45.0.0%26msproxy%3d1%26issuer%3dmso%26tenant%3dcommon%26ui_locales%3den-US%26client_info%3d1%26signup%3d1%26lw%3d1%26fl%3deasi2%26epct%3dAQABAAAAAAD--DLA3VO7QrddgJg7Wevro-TsFe87LmpgX_CpRffQ-K_zzbLpriSiPaxJGW4dnefFSUAsdVxhHoI5pVrp_M83Kjvk8RL3cd7jHpUeJxyBhsWloy62CDWKw5VtdecdesaFBb-WLFRHWsxROpo5uwSZy9ThPI6hNnVCcPp3UcsKnIUpGNHcYqLld-omz6SLRZ_Rh51yAxnB4ZMzjjFr4yl06VwrdQquOWV13_xbrW8s3iAA%26jshs%3d0%26contextid%3dE0C90E88DCDA0348%26opid%3d1E776B2D51E607A4%26mkt%3dEN-US%26lc%3d1033%26bk%3d1673268958%26uaid%3df8f55abdde0e4d2581a2a61f720df0b1&uiflavor=web&lic=1&mkt=EN-US&lc=1033&uaid=f8f55abdde0e4d2581a2a61f720df0b1"
+                    target="_blank">Create one!</a></li>
+        </ul>
+
+        <!-- security key -->
+        <ul id="seckey">
+            <li><a href="https://google.com" target="_blank">Sign in with a security key</a></li>
+            <li><img src="download.png" alt="question mark"></li>
+        </ul>
+
+        <!-- next button -->
+        <button>Next</button>
+
+    </div>
+
+    <!-- lower button sign in options with img -->
+    <button class="sigin"><img src="Screenshot 2023-01-08 222915.png" alt="key logo">Sign-in options</button>
+
+</body>
+
+</html>

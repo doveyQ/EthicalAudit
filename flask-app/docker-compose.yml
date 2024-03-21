@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  flask-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app/backend
+    environment:
+      - FLASK_APP=backend.api
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./frontend/ssl/letsencrypt/live/www.example.com/fullchain.pem:/etc/nginx/ssl/fullchain.pem
+      - ./frontend/ssl/letsencrypt/live/www.example.com/privkey.pem:/etc/nginx/ssl/privkey.pem
+      - ./frontend/ssl/dhparams.pem:/etc/nginx/ssl/dhparams.pem
+    networks:
+      - app-network
+
+  dashboard:
+    build:
+      context: ../dashboard
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    volumes:
+      - ../dashboard:/app/dashboard
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
